@@ -26,7 +26,6 @@ public abstract class WorldMixin implements ExtendedBlockView, IWorld, AutoClose
 		for(HashMap.Entry<BlockPos, CompoundTag> e : Pushable.BLOCK_ENTITIES_TO_READ.entrySet()) {
 			BlockEntity be = getBlockEntity(e.getKey());
 			if(be != null) {
-				System.out.println(getBlockState(e.getKey()));
 				((BlockStateCacher)be).pushable_setCachedState(getBlockState(e.getKey()));
 				be.fromTag(e.getValue());
 				be.setPos(e.getKey());

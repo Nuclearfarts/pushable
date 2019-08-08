@@ -23,8 +23,4 @@ public class Pushable implements ModInitializer {
 	public void onInitialize() {
 		ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new WhitelistDataListener());
 	}
-	
-	public static void yeet() {
-		System.out.println("yeet");
-	}
 }

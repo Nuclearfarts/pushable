@@ -40,11 +40,9 @@ public abstract class PistonMixin {
 	@Inject(locals = LocalCapture.CAPTURE_FAILHARD, at = @At(value = "INVOKE", target = "net/minecraft/util/math/BlockPos.offset(Lnet/minecraft/util/math/Direction;)Lnet/minecraft/util/math/BlockPos;", ordinal = 1), method = "move(Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/math/Direction;Z)Z")
 	private void storeBlockEntities(World world_1, BlockPos blockPos_1, Direction direction_1, boolean boolean_1, CallbackInfoReturnable<Boolean> cir, BlockPos blockPos_2, PistonHandler pistonHandler_1, List<BlockPos> list_1, List<BlockState> list_2, List<BlockPos> list_3, int int_2, BlockState blockStates_1[], Direction direction_2, Set<BlockPos> set_1, int int_4, BlockPos prepushPos, BlockState prepushState) {
 		if(prepushState.getBlock().hasBlockEntity()) {
-			System.out.println(prepushState);
 			BlockEntity blockEntity = world_1.getBlockEntity(prepushPos);
 			world_1.removeBlockEntity(prepushPos);
 			CompoundTag tag = blockEntity.toTag(new CompoundTag());
-			System.out.println(tag);
 			blockEntityData.set(tag); //save the BE data
 		} else {
 			blockEntityData.set(null);
