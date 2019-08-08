@@ -1,0 +1,28 @@
+{
+	"values": [
+		"minecraft:chest",
+		"minecraft:trapped_chest",
+		"minecraft:oak_sign",
+		"minecraft:birch_sign",
+		"minecraft:spruce_sign",
+		"minecraft:jungle_sign",
+		"minecraft:dark_oak_sign",
+		"minecraft:acacia_sign",
+		"minecraft:dispenser",
+		"minecraft:furnace",
+		"minecraft:brewing_stand",
+		"minecraft:hopper",
+		"minecraft:dropper",
+		"minecraft:barrel",
+		"minecraft:smoker",
+		"minecraft:blast_furnace",
+		"minecraft:campfire",
+		"minecraft:lectern",
+		"minecraft:beacon",
+		"minecraft:enchanting_table",
+		"minecraft:spawner",
+		"minecraft:ender_chest",
+		"minecraft:daylight_sensor",
+		"minecraft:conduit"
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "pushable",
+	"version": "1.0.0",
+	"name": "Pushable Block Entities",
+	"description": "makes block entities pushable",
+	"authors": [
+		"NuclearFarts"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nuclearfarts.pushable.Pushable"
+		]
+	},
+	"mixins": [
+		"pushable.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.4.0",
+		"fabric-resource-loader-v0": "*"
+	}
+}

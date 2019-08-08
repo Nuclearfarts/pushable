@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "com.nuclearfarts.pushable.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"PistonMixin",
+		"PistonBlockEntityMixin",
+		"WorldMixin",
+		"BlockEntityMixin"
+	],
+	"client": [
+		"PistonRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
