@@ -8,7 +8,7 @@
 		"NuclearFarts"
 	],
 	"contact": {
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Nuclearfarts/pushable"
 	},
 	"environment": "*",
 	"entrypoints": {
